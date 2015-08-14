@@ -1,0 +1,74 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="XamFormsControls.MyContentPage">
+    <ScrollView>
+        <StackLayout Spacing="10" Padding="10,10,10,100">
+            <Label Text="This is a label - it's inside a StackLayout" HorizontalOptions="Center" />
+            <Entry Placeholder="This is an entry - the one below has IsPassword set to true" />
+            <Entry Placeholder="password" IsPassword="True" />
+            <Button Text="I am a button" />
+            <Editor Text="Editor - MultiLine entry : no placeholder" />
+
+            <Label Text="DatePicker" />
+            <!-- Selecting a value outside the bounds (which is possible) returns the boundary value -->
+            <DatePicker MinimumDate="2005-01-01" MaximumDate="2020-01-01" Date="2015-08-14" Format="yyyy-MM-dd" />
+
+            <Label Text="BoxView" />
+            <BoxView BackgroundColor="Aqua">
+                <!-- Not really sure what to put in a BoxView -->
+                <Label Text="In a box view" TextColor="Pink" />
+            </BoxView>
+
+            <Label Text="Frame" />
+            <Frame HasShadow="True" OutlineColor="Lime">
+                <Label Text="In a frame" TextColor="Red" />
+            </Frame>
+
+            <Label Text="Image" />
+            <Image Source="icon.png"/>
+
+            <Label Text="ProgressBar" />
+            <!-- Assuming progress value falls between 0 and 1 -->
+            <ProgressBar Progress=".25" />
+
+            <Label Text="Slider" />
+            <Slider Minimum="0" Value="75" Maximum="100" />
+
+            <Label Text="Stepper" />
+            <Stepper Minimum="2" Value="10" Maximum="20" Increment="2" />
+
+            <Label Text="Switch" />
+            <Switch IsToggled="True" />
+
+            <Label Text="TimePicker" />
+            <TimePicker Format="HH:mm" Time="13:57"/>
+
+            <Label Text="Picker" />
+            <Picker Title="I am a Picker" />
+
+            <Label Text="SearchBar" />
+            <SearchBar Placeholder="search here" CancelButtonColor="Yellow" />
+
+            <Label Text="ActivityIndicator" />
+            <ActivityIndicator Color="Fuchsia" IsRunning="True" />
+
+            <!--<Label Text="OpenGLView" />
+            <OpenGLView />-->
+
+            <Label Text="WebView" />
+            <WebView Source="http://mrlacey.com/" />
+
+            <!--<Label Text="ListView" />
+            <ListView />-->
+
+            <Button Text="MasterDetail" Clicked="MasterDetailClicked" />
+
+            <Button Text="Navigation" Clicked="NavigationClicked" />
+
+            <Button Text="Tabbed" Clicked="TabbedClicked" />
+
+            <Button Text="Carousel" Clicked="CarouselClicked" />
+        </StackLayout>
+    </ScrollView>
+</ContentPage>
