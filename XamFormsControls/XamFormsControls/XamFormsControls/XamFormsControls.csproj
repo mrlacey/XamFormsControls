@@ -36,9 +36,23 @@
   </PropertyGroup>
   <ItemGroup>
     <Compile Include="App.cs" />
+    <Compile Include="MyCarouselPage.xaml.cs">
+      <DependentUpon>MyCarouselPage.xaml</DependentUpon>
+    </Compile>
     <Compile Include="MyContentPage.xaml.cs">
       <DependentUpon>MyContentPage.xaml</DependentUpon>
     </Compile>
+    <Compile Include="MyMasterDetailPage.xaml.cs">
+      <DependentUpon>MyMasterDetailPage.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="MyTab1.xaml.cs">
+      <DependentUpon>MyTab1.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="MyTab2.xaml.cs">
+      <DependentUpon>MyTab2.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="MyTabbedItemsPage.cs" />
+    <Compile Include="MyTabbedPage.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
@@ -56,6 +70,30 @@
   </ItemGroup>
   <ItemGroup>
     <EmbeddedResource Include="MyContentPage.xaml">
+      <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="MyCarouselPage.xaml">
+      <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="MyMasterDetailPage.xaml">
+      <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="MyTab1.xaml">
+      <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="MyTab2.xaml">
       <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
       <SubType>Designer</SubType>
     </EmbeddedResource>

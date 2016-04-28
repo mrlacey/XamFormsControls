@@ -12,7 +12,7 @@ namespace XamFormsControls
         public App()
         {
             // The root page of your application
-            MainPage = new MyContentPage();
+            MainPage = new NavigationPage(new MyContentPage());
         }
 
         protected override void OnStart()

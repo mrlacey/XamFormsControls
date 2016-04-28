@@ -17,18 +17,22 @@ namespace XamFormsControls
 
         private void MasterDetailClicked(object sender, EventArgs eventArgs)
         {
-        }
-
-        private void NavigationClicked(object sender, EventArgs eventArgs)
-        {
+            Navigation.PushAsync(new MyMasterDetailPage());
         }
 
         private void TabbedClicked(object sender, EventArgs eventArgs)
         {
+            Navigation.PushAsync(new MyTabbedPage());
+        }
+
+        private void TabbedItemsClicked(object sender, EventArgs eventArgs)
+        {
+            Navigation.PushAsync(new MyTabbedItemsPage());
         }
 
         private void CarouselClicked(object sender, EventArgs eventArgs)
         {
+            Navigation.PushAsync(new MyCarouselPage());
         }
     }
 }

@@ -15,10 +15,8 @@
             <DatePicker MinimumDate="2005-01-01" MaximumDate="2020-01-01" Date="2015-08-14" Format="yyyy-MM-dd" />
 
             <Label Text="BoxView" />
-            <BoxView BackgroundColor="Aqua">
-                <!-- Not really sure what to put in a BoxView -->
-                <Label Text="In a box view" TextColor="Pink" />
-            </BoxView>
+                <!-- A BoxView is just a rectangle -->
+            <BoxView BackgroundColor="Aqua"/>
 
             <Label Text="Frame" />
             <Frame HasShadow="True" OutlineColor="Lime">
@@ -29,7 +27,7 @@
             <Image Source="icon.png"/>
 
             <Label Text="ProgressBar" />
-            <!-- Assuming progress value falls between 0 and 1 -->
+            <!-- progress value falls between 0 and 1 -->
             <ProgressBar Progress=".25" />
 
             <Label Text="Slider" />
@@ -45,7 +43,12 @@
             <TimePicker Format="HH:mm" Time="13:57"/>
 
             <Label Text="Picker" />
-            <Picker Title="I am a Picker" />
+            <Picker Title="I am a Picker">
+                <Picker.Items>
+                    <x:String>Male</x:String>
+                    <x:String>Female</x:String>
+                </Picker.Items>
+            </Picker>
 
             <Label Text="SearchBar" />
             <SearchBar Placeholder="search here" CancelButtonColor="Yellow" />
@@ -64,9 +67,9 @@
 
             <Button Text="MasterDetail" Clicked="MasterDetailClicked" />
 
-            <Button Text="Navigation" Clicked="NavigationClicked" />
+            <Button Text="Tabbed (Children)" Clicked="TabbedClicked" />
 
-            <Button Text="Tabbed" Clicked="TabbedClicked" />
+            <Button Text="Tabbed (Items)" Clicked="TabbedItemsClicked" />
 
             <Button Text="Carousel" Clicked="CarouselClicked" />
         </StackLayout>
